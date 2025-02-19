@@ -74,12 +74,12 @@
 	--rs-phone-color: var(--rs-online-color);
 	--rs-phone-visible: block;
 }
-/* Apply Radial Status to Chat Avatars */
-.message-2CShn3 .avatar-2e8lTP {
+/* Apply Radial Status Effect to Chat Avatars */
+.message__5126c .avatar__08542 {
   position: relative;
 }
 
-.message-2CShn3 .avatar-2e8lTP::after {
+.message__5126c .avatar__08542::after {
   content: "";
   position: absolute;
   top: -3px;
@@ -91,9 +91,9 @@
   pointer-events: none;
 }
 
-/* Status-specific colors */
-.avatar-2e8lTP[aria-label*="Online"]::after { border-color: var(--rs-online-color); }
-.avatar-2e8lTP[aria-label*="Idle"]::after { border-color: var(--rs-idle-color); }
-.avatar-2e8lTP[aria-label*="Do Not Disturb"]::after { border-color: var(--rs-dnd-color); }
-.avatar-2e8lTP[aria-label*="Offline"]::after { border-color: var(--rs-offline-color); }
-.avatar-2e8lTP[aria-label*="Streaming"]::after { border-color: var(--rs-streaming-color); }
+/* Apply Correct Colors Based on Status */
+.avatar__08542[aria-label*="Online"]::after { border-color: var(--rs-online-color); }
+.avatar__08542[aria-label*="Idle"]::after { border-color: var(--rs-idle-color); }
+.avatar__08542[aria-label*="Do Not Disturb"]::after { border-color: var(--rs-dnd-color); }
+.avatar__08542[aria-label*="Offline"]::after { border-color: var(--rs-offline-color); }
+.avatar__08542[aria-label*="Streaming"]::after { border-color: var(--rs-streaming-color); }
