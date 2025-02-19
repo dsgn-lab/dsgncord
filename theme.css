@@ -78,7 +78,7 @@
 	/* change to block to show, none to hide */
 	--discord-icon: none; /* discord icon */
 	--moon-icon: block; /* moon icon */
-	--moon-icon-url: url('https://wwww.mydsgn.site/DSGN_GREEN_STAR.svg/'); /* custom icon url */
+	--moon-icon-url: url('https://wwww.mydsgn.site/DSGN_GREEN_STAR.svg/') !important; /* custom icon url */
 	--moon-icon-size: auto;
 
 	/* filter uncolorable elements to fit theme */
