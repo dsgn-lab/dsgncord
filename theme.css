@@ -65,12 +65,35 @@
 
 	--rs-avatar-shape: 50%;
 
-	--rs-online-color: var(--online-indicator);
-	--rs-idle-color: var(--idle-indicator);
-	--rs-dnd-color: var(--dnd-indicator);
-	--rs-streaming-color: var(--streaming-indicator);
+	--rs-online-color: #A6E04E;
+	--rs-idle-color: #D6C25C;
+	--rs-dnd-color: #D65C85;
+	--rs-streaming-color: #855CD6;
 	--rs-offline-color: #636b75;
 	--rs-invisible-color: #747f8d;
 	--rs-phone-color: var(--rs-online-color);
 	--rs-phone-visible: block;
 }
+/* Apply Radial Status to Chat Avatars */
+.message-2CShn3 .avatar-2e8lTP {
+  position: relative;
+}
+
+.message-2CShn3 .avatar-2e8lTP::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: var(--rs-avatar-shape);
+  border: var(--rs-small-width) solid var(--rs-online-color);
+  pointer-events: none;
+}
+
+/* Status-specific colors */
+.avatar-2e8lTP[aria-label*="Online"]::after { border-color: var(--rs-online-color); }
+.avatar-2e8lTP[aria-label*="Idle"]::after { border-color: var(--rs-idle-color); }
+.avatar-2e8lTP[aria-label*="Do Not Disturb"]::after { border-color: var(--rs-dnd-color); }
+.avatar-2e8lTP[aria-label*="Offline"]::after { border-color: var(--rs-offline-color); }
+.avatar-2e8lTP[aria-label*="Streaming"]::after { border-color: var(--rs-streaming-color); }
