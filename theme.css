@@ -73,6 +73,23 @@
 	--rs-invisible-color: #747f8d;
 	--rs-phone-color: var(--rs-online-color);
 	--rs-phone-visible: block;
+
+		/* direct messages moon icon */
+	/* change to block to show, none to hide */
+	--discord-icon: none; /* discord icon */
+	--moon-icon: block; /* moon icon */
+	--moon-icon-url: url('https://wwww.mydsgn.site/DSGN_GREEN_STAR.svg/'); /* custom icon url */
+	--moon-icon-size: auto;
+
+	/* filter uncolorable elements to fit theme */
+	/* (just set to none, they're too much work to configure) */
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4); /* login background artwork */
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43); /* add friend page explore icon */
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2); /* add friend page school icon */
+
+	/* nav buttons */
+	--windows-nav: none;
+	--custom-nav: block;
 }
 /* Apply Radial Status Effect to Chat Avatars */
 .message__5126c .avatar__08542 {
