@@ -1,0 +1,76 @@
+/**
+ * @name DSGNCORD
+ * @description DSGN's official theme.
+ * @author DSGN Team
+ * @version 1.0
+*/
+
+/* Import base DSGN theme */
+@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+
+/* Import RadialStatus extension */
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+
+/* DSGN Theme Variables */
+:root {
+	--font: 'figtree';
+	--corner-text: 'Midnight';
+	--online-indicator: #A6E04E;
+	--dnd-indicator: #D65C85;
+	--idle-indicator: #D6C25C;
+	--streaming-indicator: #855CD6;
+
+	/* Accent Colors */
+	--accent-1: #D7E04E;
+	--accent-2: #ACF532;
+	--accent-3: #8AC527;
+	--accent-4: #75A623;
+	--accent-5: #67921E;
+	--mention: rgba(29, 182, 196, 0.1);
+	--mention-hover: rgba(29, 182, 196, 0.05);
+
+	/* Text Colors */
+	--text-0: white;
+	--text-1: #B3C4DE;
+	--text-2: #B3C4DE;
+	--text-3: #99A8C0;
+	--text-4: #667389;
+	--text-5: #404C60;
+
+	/* Background Colors */
+	--bg-1: #1F1F1F;
+	--bg-2: #2A3245;
+	--bg-3: #000000;
+	--bg-4: #0E0E10;
+	--hover: rgba(98, 96, 127, 0.1);
+	--active: rgba(80, 90, 128, 0.2);
+	--message-hover: rgba(0, 0, 0, 0.1);
+
+	/* Border Radius */
+	--roundness-xl: 15px;
+	--roundness-l: 15px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	/* RadialStatus Overrides */
+	--rs-small-spacing: 2px;
+	--rs-medium-spacing: 3px;
+	--rs-large-spacing: 4px;
+
+	--rs-small-width: 2px;
+	--rs-medium-width: 3px;
+	--rs-large-width: 4px;
+
+	--rs-avatar-shape: 50%;
+
+	--rs-online-color: var(--online-indicator);
+	--rs-idle-color: var(--idle-indicator);
+	--rs-dnd-color: var(--dnd-indicator);
+	--rs-streaming-color: var(--streaming-indicator);
+	--rs-offline-color: #636b75;
+	--rs-invisible-color: #747f8d;
+	--rs-phone-color: var(--rs-online-color);
+	--rs-phone-visible: block;
+}
